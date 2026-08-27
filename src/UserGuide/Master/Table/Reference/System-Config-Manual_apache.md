@@ -1057,7 +1057,7 @@ The `iotdb-system.properties` file contains various configurations for managing 
 
 | Name        | datanode_memory_proportion                                   |
 | ----------- | ------------------------------------------------------------ |
-| Description | Memory Allocation Ratio: StorageEngine, QueryEngine, SchemaEngine, Consensus, StreamingEngine and Free Memory. |
+| Description | The allocation ratio of StorageEngine, QueryEngine, SchemaEngine, Consensus, StreamingEngine, and Free Memory. Since V2.0.11, half of the free memory serves as the total memory budget of the AutoResizingBuffer in the RPC layer, which limits the overall memory usage of framed transport read/write buffers and compression/decompression buffers. |
 | Type        | Ratio                                                        |
 | Default     | 3:3:1:1:1:1                                                  |
 | Effective   | Restart required.                                            |
