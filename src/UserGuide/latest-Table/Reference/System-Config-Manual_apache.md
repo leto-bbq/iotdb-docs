@@ -1461,9 +1461,9 @@ The `iotdb-system.properties` file contains various configurations for managing 
 
 | Name        | chunk_timeseriesmeta_free_memory_proportion                  |
 | ----------- | ------------------------------------------------------------ |
-| Description | Read memory Allocation Ratio: BloomFilterCache : ChunkCache : TimeSeriesMetadataCache : Coordinator : Operators : DataExchange : timeIndex in TsFileResourceList : others.The parameter form is a:b:c:d:e:f:g:h, where a, b, c, d, e, f, g and h are integers. for example: 1:1:1:1:1:1:1:1 , 1:100:200:50:200:200:200:50 |
+| Description | Read memory Allocation Ratio: BloomFilterCache : ChunkCache : TimeSeriesMetadataCache : Coordinator : Operators : DataExchange : timeIndex in TsFileResourceList : others. The parameter form is a:b:c:d:e:f:g:h, where a, b, c, d, e, f, g and h are integers. For example: 1:1:1:1:1:1:1:1, 1:100:200:50:200:200:200:50 |
 | Type        | String                                                       |
-| Default     | 1 : 100 : 200 : 300 : 400                                    |
+| Default     | 1 : 100 : 200 : 50 : 200 : 200 : 200 : 50                    |
 | Effective   | Restart required.                                            |
 
 - enable_last_cache
